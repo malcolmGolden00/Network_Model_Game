@@ -124,7 +124,7 @@ def start_game():
 
     sel_model_1 = tk.Button(answer_screen, text="OSI", font=entry_font, command=lambda: set_model("OSI"))
     sel_model_1.place(relx=.4, rely=.6, relwidth=.1, relheight=.15)
-    sel_model_2 = tk.Button(answer_screen, text="TCP / IP", font=entry_font, command=lambda: set_model("TCP / IP"))
+    sel_model_2 = tk.Button(answer_screen, text="TCP/IP", font=entry_font, command=lambda: set_model("TCP/IP"))
     sel_model_2.place(relx=.5, rely=.6, relwidth=.1, relheight=.15)
 
     sel_layer_1 = tk.Button(answer_screen, text="Application", font=entry_font, comman=lambda: set_layer("Application"))
@@ -164,7 +164,7 @@ def start_game():
             correct.place(relx=.7185, rely=.01, relwidth=.1, relheight=.07)
         else:
             incorrect = tk.Label(answer_screen, text="Incorrecrt", fg=red, font=ans_chk_font)
-            incorrect.place(relx=.75, rely=.01, relwidth=.1, relheight=.07)
+            incorrect.place(relx=.7185, rely=.01, relwidth=.1, relheight=.07)
 
 
 
@@ -175,14 +175,12 @@ def start_game():
         help_root = tk.Tk()
         help_root.minsize(height=900, width=1000)
         help_root.title("Help Window")
-    def exit_game():
-        exit()
+
 
 # Main Buttons
     help_button = tk.Button(main_screen, text="Need Help?", bg=darker_grey, command=help_window)
     help_button.place(relx=.005, rely=.01, relwidth=.07, relheight=.05)
-    quit_button = tk.Button(main_screen, text="Quit", bg=darker_grey, command=exit_game)
-    quit_button.place(relx=.025, rely=.9, relwidth=.1, relheight=.05)
+
     next_q_button = tk.Button(main_screen, text="Next", bg=darker_grey, command=start_game)
     next_q_button.place(relx=.875, rely=.9, relwidth=.1, relheight=.05)
     submit_button = tk.Button(main_screen, text="Submit", bg=darker_grey, command=ans_chk)
@@ -191,5 +189,11 @@ def start_game():
     #    input_screen =
     root.mainloop()
 
+
+def exit_game():
+    exit()
+
+quit_button = tk.Button(main_screen, text="Quit", bg=darker_grey, command=exit_game)
+quit_button.place(relx=.025, rely=.9, relwidth=.1, relheight=.05)
 #initiate
 start_game()

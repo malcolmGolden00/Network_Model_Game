@@ -22,8 +22,8 @@
 # answers \2d array\
 answers = [["1", "OSI", "Physical"],["2", "OSI", "Data Link"], ["3", "OSI", "Network"],
 ["4", "OSI", "Transport"],["5", "OSI", "Session"],["6", "OSI", "Presentation"],
-["7", "OSI", "Application"],["1", "Tcp/Ip", "Network Access"],["2", "Tcp/Ip", "Internet"],
-["3", "Tcp/Ip", "Transport"],["4", "Tcp/Ip", "Application"]]
+["7", "OSI", "Application"],["1", "TCP/IP", "Network"],["2", "TCP/IP", "Internet"],
+["3", "TCP/IP", "Transport"],["4", "TCP/IP", "Application"]]
 
 
 # questions
